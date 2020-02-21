@@ -1,0 +1,38 @@
+<div>
+    <form [formGroup]="moneyForm">
+        <span class="ui-float-label">
+            <input id="float-input1" type="text" pInputText formControlName="descricao" [ngClass]="{'is-invalid': submitted && f.descricao.errors}">
+            <label for="float-input1">Descrição</label>
+            <div *ngIf="submitted && f.descricao.errors" class="erro-validacao">
+                <div *ngIf="f.descricao.errors.required">{{mensagemRequerida}}</div>
+            </div>
+        </span>
+        <span class="ui-float-label">
+            <input id="float-input2" type="number" pInputText formControlName="valor" [ngClass]="{'is-invalid': submitted && f.valor.errors}">
+            <label for="float-input2">Valor</label>
+            <div *ngIf="submitted && f.valor.errors" class="erro-validacao">
+                <div *ngIf="f.valor.errors.required">{{mensagemRequerida}}</div>
+            </div>
+        </span>
+        <span class="ui-float-label">
+            <input id="float-input3" type="text" pInputText formControlName="classificacao" [ngClass]="{'is-invalid': submitted && f.classificacao.errors}">
+            <label for="float-input3">Classificação</label>
+            <div *ngIf="submitted && f.classificacao.errors" class="erro-validacao">
+                <div *ngIf="f.classificacao.errors.required">{{mensagemRequerida}}</div>
+            </div>
+        </span>
+
+        <div class="ui-g tipo">
+            <div class="ui-g-12">
+                <p-radioButton value="Saída" name="tipocobranca" label="Saída" formControlName="tipocobranca" inputId="opt1" ></p-radioButton>
+            </div>
+            <div class="ui-g-12">
+                <p-radioButton value="Entrada" name="tipocobranca" label="Entrada" formControlName="tipocobranca" inputId="opt2"></p-radioButton>
+            </div>
+        </div>
+
+        <button type="submit" icon="pi pi-check" class="ui-button-text" pButton (click)="onSubmit()"></button>
+
+    </form>
+</div>
+

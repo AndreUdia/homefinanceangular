@@ -1,0 +1,31 @@
+.erro-validacao {
+    color: rebeccapurple;
+}
+
+.ui-float-label{
+    margin: 2em;
+    margin-left: 5em;
+    padding: 2px;
+}
+
+.ui-float-label>label{
+    color: peru;
+    padding: 3px;
+}
+
+#float-input1, #float-input2, #float-input3{
+    border-radius: 1em;
+    text-align: center;
+    size: 30;
+}
+
+.tipo{
+    margin: 2em;
+    margin-left: 5em;
+    color: peru;
+}
+
+button{
+    margin-left: 16em;
+    border-radius: 2em;
+}
