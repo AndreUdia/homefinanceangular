@@ -11,7 +11,7 @@ export class MoneyFormComponent{
   text: string;
   tipocobranca: string;
   submitted = false;
-  mensagemRequerida = 'Campo de preenchimento obrigatório!';
+  mensagemRequerida = 'Campo obrigatório!';
 
   moneyForm = this.fb.group ({
     descricao: ['', Validators.required],

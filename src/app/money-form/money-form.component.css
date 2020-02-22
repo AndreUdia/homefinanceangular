@@ -1,11 +1,9 @@
 .erro-validacao {
-    color: rebeccapurple;
+    color: rgb(116, 18, 94);
 }
 
 .ui-float-label{
-    margin: 2em;
-    margin-left: 5em;
-    padding: 2px;
+    margin-top: 1em;
 }
 
 .ui-float-label>label{
@@ -20,12 +18,16 @@
 }
 
 .tipo{
-    margin: 2em;
-    margin-left: 5em;
     color: peru;
+    margin-top: 1em;
 }
 
 button{
-    margin-left: 16em;
     border-radius: 2em;
+    padding-left: 5em;
+}
+
+.divgeral{
+    margin-left: 2em;
+    margin-top: 2em;
 }
