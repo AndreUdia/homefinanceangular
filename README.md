@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
-Available at homefinanceangular.herokuapp.com  :)
+Available at https://homefinanceangular.herokuapp.com  :)
 
 ## Development server
 
